@@ -10,6 +10,7 @@ import java.util.Comparator;
 public class NameComparator implements Comparator<Item> {
     @Override
     public int compare(Item o1, Item o2) {
+        System.out.println((int) (o1.getName().compareToIgnoreCase(o2.getName())));
         return (int) (o1.getName().compareToIgnoreCase(o2.getName()));
     }
 }
